@@ -1,0 +1,21 @@
+package com.addpeople;
+
+import com.addpeople.tools.ui.MainWindow;
+import javax.swing.*;
+
+public class AddPeopleTools {
+    public static void main(String[] args) {
+        // Set system look and feel
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Launch GUI on Event Dispatch Thread
+        SwingUtilities.invokeLater(() -> {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.setVisible(true);
+        });
+    }
+}
