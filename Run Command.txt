@@ -1,0 +1,3 @@
+Use this to run
+java -jar target\ap-manual-feed-extractor-1.0.0-jar-with-dependencies.jar
+
